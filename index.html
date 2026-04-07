@@ -39,6 +39,62 @@
             margin: 0 auto;
             line-height: 1.8;
         }
+
+        /* Skills section */
+        .skills {
+            padding: 80px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .skills h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .skill-card {
+            background-color: #13161D;
+            border: 1px solid #1E2230;
+            border-radius: 12px;
+            padding: 24px;
+        }
+
+        .skill-card:hover {
+            border-color: #4AE3B5;
+        }
+
+        .skill-card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .skill-card p {
+            font-size: 14px;
+            color: #8B90A0;
+            margin-bottom: 16px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tags span {
+            background-color: rgba(74, 227, 181, 0.1);
+            color: #4AE3B5;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            border: 1px solid rgba(74, 227, 181, 0.2);
+        }
     </style>
 </head>
 <body>
@@ -47,6 +103,57 @@
         <h1>Divyasree <span class="highlight">Manne</span></h1>
         <p>Data Analyst | Memphis, TN</p>
         <p>3+ years turning complex healthcare and financial data into clear business decisions.</p>
+    </div>
+
+    <div class="skills">
+        <h2>What I Work With</h2>
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <h3>SQL & Databases</h3>
+                <p>Complex queries, CTEs, window functions, performance tuning</p>
+                <div class="tags">
+                    <span>SQL Server</span>
+                    <span>PostgreSQL</span>
+                    <span>Snowflake</span>
+                    <span>Oracle</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>Python & Statistics</h3>
+                <p>EDA, hypothesis testing, regression, time-series forecasting</p>
+                <div class="tags">
+                    <span>Pandas</span>
+                    <span>NumPy</span>
+                    <span>Scikit-learn</span>
+                    <span>SAS</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>BI & Dashboards</h3>
+                <p>KPI dashboards, data storytelling, executive reporting</p>
+                <div class="tags">
+                    <span>Power BI</span>
+                    <span>Tableau</span>
+                    <span>Qlik Sense</span>
+                    <span>Looker</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>Cloud & Pipelines</h3>
+                <p>ELT pipelines, dimensional modeling, data integration</p>
+                <div class="tags">
+                    <span>AWS Glue</span>
+                    <span>Azure ADF</span>
+                    <span>dbt</span>
+                    <span>Databricks</span>
+                </div>
+            </div>
+
+        </div>
     </div>
 
 </body>
