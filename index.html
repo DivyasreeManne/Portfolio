@@ -95,6 +95,148 @@
             font-size: 12px;
             border: 1px solid rgba(74, 227, 181, 0.2);
         }
+        /* Projects section */
+        .projects {
+            padding: 80px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .projects h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .project-card {
+            background-color: #13161D;
+            border: 1px solid #1E2230;
+            border-radius: 12px;
+            padding: 24px;
+        }
+
+        .project-card:hover {
+            border-color: #4AE3B5;
+            transform: translateY(-4px);
+            transition: all 0.3s;
+        }
+
+        .project-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .project-badge.healthcare {
+            background-color: rgba(74, 227, 181, 0.15);
+            color: #4AE3B5;
+        }
+
+        .project-badge.finance {
+            background-color: rgba(59, 130, 246, 0.15);
+            color: #60A5FA;
+        }
+
+        .project-badge.engineering {
+            background-color: rgba(139, 92, 246, 0.15);
+            color: #A78BFA;
+        }
+
+        .project-badge.analytics {
+            background-color: rgba(251, 191, 36, 0.15);
+            color: #FBBF24;
+        }
+
+        .project-card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .project-card p {
+            font-size: 14px;
+            color: #8B90A0;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .project-card a {
+            color: #4AE3B5;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 12px;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact section */
+        .contact {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .contact h2 {
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+
+        .contact p {
+            font-size: 16px;
+            color: #8B90A0;
+            max-width: 500px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .btn.primary {
+            background-color: #4AE3B5;
+            color: #0C0F14;
+        }
+
+        .btn.secondary {
+            border: 1px solid #1E2230;
+            color: #E8EAF0;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 24px;
+            border-top: 1px solid #1E2230;
+            font-size: 13px;
+            color: #5A5F72;
+        }
     </style>
 </head>
 <body>
@@ -155,6 +297,82 @@
 
         </div>
     </div>
+</div>
+    </div>
+
+    <div class="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <div class="project-badge healthcare">Healthcare</div>
+                <h3>Healthcare Claims Cost Analysis</h3>
+                <p>Analyzed synthetic patient data to identify cost drivers, utilization patterns, and medication adherence trends. Built an interactive Power BI dashboard.</p>
+                <div class="tags">
+                    <span>SQL</span>
+                    <span>Python</span>
+                    <span>Power BI</span>
+                    <span>Snowflake</span>
+                </div>
+                <a href="#">View on GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-badge finance">Finance</div>
+                <h3>Bank Risk Monitoring Dashboard</h3>
+                <p>Built a risk monitoring dashboard using FDIC public data. Tracks KRIs including NPL ratios, capital adequacy, and exposure across institutions.</p>
+                <div class="tags">
+                    <span>SQL</span>
+                    <span>Tableau</span>
+                    <span>Python</span>
+                    <span>FDIC Data</span>
+                </div>
+                <a href="#">View on GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-badge engineering">Engineering</div>
+                <h3>ELT Pipeline with dbt & Snowflake</h3>
+                <p>Designed a complete ELT pipeline: raw data ingestion to staging to dimensional star schema. Includes automated testing and documentation.</p>
+                <div class="tags">
+                    <span>dbt</span>
+                    <span>Snowflake</span>
+                    <span>SQL</span>
+                    <span>Star Schema</span>
+                </div>
+                <a href="#">View on GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-badge analytics">Analytics</div>
+                <h3>Claims Forecasting with Prophet</h3>
+                <p>Time-series forecasting of healthcare claims using Prophet and ARIMA. Includes EDA, seasonal decomposition, and model comparison.</p>
+                <div class="tags">
+                    <span>Python</span>
+                    <span>Prophet</span>
+                    <span>ARIMA</span>
+                    <span>Jupyter</span>
+                </div>
+                <a href="#">View on GitHub →</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="contact">
+        <h2>Let's Work Together</h2>
+        <p>Open to data analyst roles in healthcare, financial services, or any data-driven organization. Based in Memphis, TN — open to remote.</p>
+        <div class="contact-links">
+            <a href="mailto:divyasreemanne99@gmail.com" class="btn primary">Email Me</a>
+            <a href="https://github.com/DivyasreeManne" class="btn secondary">GitHub</a>
+            <a href="https://linkedin.com/" class="btn secondary">LinkedIn</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Divyasree Manne. Built with purpose.</p>
+    </footer>
 
 </body>
 </html>
+
